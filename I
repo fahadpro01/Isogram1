@@ -1,0 +1,59 @@
+Given a string S of lowercase alphabets, check if it is isogram or not. An Isogram is a string in which no letter occurs more than once.
+
+Example 1:
+
+Input:
+S = machine
+Output: 1
+Explanation: machine is an isogram
+as no letter has appeared twice. Hence
+we print 1.
+Example 2:
+
+Input:
+S = geeks
+Output: 0
+Explanation: geeks is not an isogram
+as 'e' appears twice. Hence we print 0.
+Your Task:
+This is a function problem. You only need to complete the function isIsogram() that takes a string as a parameter and returns either true or false.
+
+Expected Time Complexity: O(N).
+Expected Auxiliary Space: O(Number of distinct characters).
+Note: N = |S|
+
+Constraints:
+1 <= |s| <= 103
+
+ 
+
+View Bookmarked Problems
+Topic Tags
+Related Courses
+
+C++ (g++ 5.4)
+ 
+
+Test against custom input
+  
+        unordered_map <char, int> map;
+
+
+10111213141516171819202122232425262728293031323334353637383940414243
+{    public:    //Function to check if a string is Isogram or not.    bool isIsogram(string s)    {            unordered_map <char, int> map;        for(int i=0;i<s.size();i++){           map[s[i]]++;           if( map[s[i]]>1){                return false;           }        }         return true;    }};// { Driver Code Starts.int main() {    int t;    cin>>t;    while(t--)    {                string s;        cin>>s;        Solution obj;        cout<<obj.isIsogram(s)<<endl;            }    return 0;}  // } Driver Code Ends
+alarm Average Time: 30m
+Your Time: 12m 25s
+  Compile & Run  Submit
+Problem Solved Successfully 
+Total Points Scored:
+1/1
+Total Time Taken:
+0.0/1.6
+Your Accuracy:
+100%
+Attempts No.:
+1
+
+
+Your current score is 1. Score 99 more to get access to premium Jobs portal and stand a chance to get your dream placement
+We are replacing the old Disqus forum with the new Discussi
